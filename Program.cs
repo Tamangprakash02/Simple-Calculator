@@ -1,19 +1,10 @@
-﻿Panda p1 = new Panda ("Pan Dee");
-Panda p2 = new Panda ("Pan Dah");
+﻿using System;
 
-Console.WriteLine (p1.Name);
-Console.WriteLine (p2.Name);
+Console.WriteLine (FeetToInches (30));
+Console.WriteLine (FeetToInches (100));
 
-Console.WriteLine (Panda.Population);
-
-public class Panda
+int FeetToInches (int feet)
 {
-public string Name;
-public static int Population;
-
-public Panda (string n)
-{
- Name = n;
- Population = Population + 1;
-}
+int inches = feet * 12;
+return inches;
 } 
