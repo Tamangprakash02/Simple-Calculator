@@ -1,4 +1,19 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-int x = 12 * 30;
-System.Console.WriteLine(x);
+﻿Panda p1 = new Panda ("Pan Dee");
+Panda p2 = new Panda ("Pan Dah");
+
+Console.WriteLine (p1.Name);
+Console.WriteLine (p2.Name);
+
+Console.WriteLine (Panda.Population);
+
+public class Panda
+{
+public string Name;
+public static int Population;
+
+public Panda (string n)
+{
+ Name = n;
+ Population = Population + 1;
+}
+} 
