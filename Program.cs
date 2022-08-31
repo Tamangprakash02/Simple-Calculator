@@ -1,10 +1,7 @@
-﻿using System;
-
-Console.WriteLine (FeetToInches (30));
-Console.WriteLine (FeetToInches (100));
-
-int FeetToInches (int feet)
-{
-int inches = feet * 12;
-return inches;
-} 
+using System;
+int x = 12345;
+long y = x;
+short z = (short)x;
+Console.WriteLine(x);
+Console.WriteLine(y);
+Console.WriteLine(z);
