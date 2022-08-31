@@ -13,4 +13,4 @@ p1.X = 9;
 Console.WriteLine (p1.X);
 Console.WriteLine (p2.X);
 
-public struct Point { public int X; public int Y; }
+public class Point { public int X; public int Y; }
