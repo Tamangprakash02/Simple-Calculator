@@ -1,65 +1,32 @@
-using System;
-int number1, number2, result, action;
-Console.WriteLine("Enter Your First Number");
-number1 = int.Parse(Console.ReadLine());
-Console.WriteLine("Enter Your Second Number");
-number2 = int.Parse(Console.ReadLine());
-result = 0;
-Console.WriteLine("1 For Addition");
-Console.WriteLine("2 For Subtraction");
-Console.WriteLine("3 For Muliplication");
-Console.WriteLine("4 For Division");
-action = int.Parse(Console.ReadLine());
-int Addition(int number1, int number2)
-{
-    int result = number1 + number2;
-    return result;
-}
-int Subtraction(int number1, int number2)
-{
-    int result = number1 - number2;
-    return result;
-}
-int Multiplication(int number1, int number2)
-{
-    int result = number1 * number2;
-    return result;
-}
-int Division(int number1, int number2)
-{
-    int result = number1 / number2;
-    return result;
-}
-Console.WriteLine("The result is {0}", result);
-switch (action)
-{
-    case 1:
-        {
-            result = Addition(number1, number2);
+int unary=0;
+int preIncrement;
+int preDecrement;
+int postIncrement;
+int postDecrement;
+int positive;
+int negative;
+sbyte bitNot; 
+bool logNot;
+preIncrement = ++unary;
+Console.WriteLine("pre-Increment: {0}", preIncrement);
 
-            break;
-        }
-    case 2:
-        {
-            result = Subtraction(number1, number2);
-            break;
-        }
-    case 3:
-        {
-            result = Multiplication(number1, number2);
-            break;
-        }
-    case 4:
-        {
-            result = Division(number1, number2);
-            break;
-        }
-    default:
-        Console.WriteLine("Sorry Wrong Action");
-        break;
+preDecrement = --unary;
+Console.WriteLine("pre-Decrement: {0}", preDecrement);
+postDecrement = unary--;
+Console.WriteLine("post-Decrement: {0}", postDecrement);
+postIncrement = unary++;
+Console.WriteLine("post-Increment: {0}", postIncrement);
+Console.WriteLine("Final Value of Unary: {0}", unary);
+positive = -postIncrement;
+Console.WriteLine("Positive: {0}", positive);
+negative = +postIncrement;
+Console.WriteLine("Negative: {0}", negative);
 
-}
-if (result != 0)
-{
-    Console.WriteLine("The result is {0}",result);
-}
+bitNot = 0;
+bitNot = (sbyte) (~bitNot);
+Console.WriteLine("Bitwise Not: {0}", bitNot);
+
+logNot = false;
+logNot = !logNot;
+Console.WriteLine("Logical Not: {0}", logNot);
+
