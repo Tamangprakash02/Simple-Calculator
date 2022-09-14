@@ -1,19 +1,8 @@
-int x, y, result;
-float floatresult;
-
-x = 7;
-y = 5;
-result = x+y;
-Console.WriteLine("x+y: {0}", result);
-result = x-y;
-Console.WriteLine("x-y: {0}", result);
-result = x*y;
-Console.WriteLine("x*y: {0}", result);
-result = x/y;
-Console.WriteLine("x/y: {0}", result);
-floatresult = (float)x/(float)y;
-Console.WriteLine("x/y: {0}", floatresult);
-result = x%y;
-Console.WriteLine("x%y: {0}", result);
-result += x;
-Console.WriteLine("result+=x: {0}", result);
+int[] myInts = { 5, 10, 15 };
+bool[][] myBools = new bool [2][];
+myBools[0] = new bool[2];
+myBools[1] = new bool[1];
+double[,] myDoubles = new double[2 ,2];
+string[] myStrings = new string[3];
+Console.WriteLine("myInts[0]: {0}, myInts[1]: {1}, myInts[2]: {2}",
+myInts[0], myInts[1], myInts[2]);
